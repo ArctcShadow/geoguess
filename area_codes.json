@@ -1,0 +1,2192 @@
+{
+    "205": {
+        "state": "Alabama",
+        "city": "Birmingham",
+        "lat": 33.5206824,
+        "lon": -86.8024326
+    },
+    "251": {
+        "state": "Alabama",
+        "city": "Mobile",
+        "lat": 30.6913462,
+        "lon": -88.0437509
+    },
+    "256": {
+        "state": "Alabama",
+        "city": "Huntsville",
+        "lat": 34.729847,
+        "lon": -86.5859011
+    },
+    "334": {
+        "state": "Alabama",
+        "city": "Montgomery",
+        "lat": 32.3777111,
+        "lon": -86.3090775
+    },
+    "659": {
+        "state": "Alabama",
+        "city": "Birmingham",
+        "lat": 33.5206824,
+        "lon": -86.8024326
+    },
+    "938": {
+        "state": "Alabama",
+        "city": "Huntsville",
+        "lat": 34.729847,
+        "lon": -86.5859011
+    },
+    "907": {
+        "state": "Alaska",
+        "city": "Anchorage",
+        "lat": 61.2163129,
+        "lon": -149.894852
+    },
+    "480": {
+        "state": "Arizona",
+        "city": "Mesa",
+        "lat": 33.4151005,
+        "lon": -111.831455
+    },
+    "520": {
+        "state": "Arizona",
+        "city": "Tucson",
+        "lat": 32.2228765,
+        "lon": -110.974847
+    },
+    "602": {
+        "state": "Arizona",
+        "city": "Phoenix",
+        "lat": 33.4484367,
+        "lon": -112.074141
+    },
+    "623": {
+        "state": "Arizona",
+        "city": "Glendale",
+        "lat": 33.5386858,
+        "lon": -112.185994
+    },
+    "928": {
+        "state": "Arizona",
+        "city": "Flagstaff",
+        "lat": 35.1987522,
+        "lon": -111.651822
+    },
+    "327": {
+        "state": "Arkansas",
+        "city": "Little Rock",
+        "lat": 34.7465071,
+        "lon": -92.2896267
+    },
+    "479": {
+        "state": "Arkansas",
+        "city": "Fayetteville",
+        "lat": 36.0625843,
+        "lon": -94.1574328
+    },
+    "501": {
+        "state": "Arkansas",
+        "city": "Little Rock",
+        "lat": 34.7465071,
+        "lon": -92.2896267
+    },
+    "870": {
+        "state": "Arkansas",
+        "city": "Jonesboro",
+        "lat": 35.8348088,
+        "lon": -90.7045297
+    },
+    "209": {
+        "state": "California",
+        "city": "Stockton",
+        "lat": 37.9577016,
+        "lon": -121.290779
+    },
+    "213": {
+        "state": "California",
+        "city": "Los Angeles",
+        "lat": 34.0536909,
+        "lon": -118.242766
+    },
+    "279": {
+        "state": "California",
+        "city": "Sacramento",
+        "lat": 38.5810606,
+        "lon": -121.493895
+    },
+    "310": {
+        "state": "California",
+        "city": "Los Angeles",
+        "lat": 34.0536909,
+        "lon": -118.242766
+    },
+    "323": {
+        "state": "California",
+        "city": "Los Angeles",
+        "lat": 34.0536909,
+        "lon": -118.242766
+    },
+    "341": {
+        "state": "California",
+        "city": "Oakland",
+        "lat": 37.8044557,
+        "lon": -122.271356
+    },
+    "350": {
+        "state": "California",
+        "city": "Stockton",
+        "lat": 37.9577016,
+        "lon": -121.290779
+    },
+    "369": {
+        "state": "California",
+        "city": "Vallejo",
+        "lat": 38.1040864,
+        "lon": -122.2566367
+    },
+    "408": {
+        "state": "California",
+        "city": "San Jose",
+        "lat": 37.3361663,
+        "lon": -121.890591
+    },
+    "415": {
+        "state": "California",
+        "city": "San Francisco",
+        "lat": 37.7879363,
+        "lon": -122.4075201
+    },
+    "424": {
+        "state": "California",
+        "city": "Los Angeles",
+        "lat": 34.0536909,
+        "lon": -118.242766
+    },
+    "442": {
+        "state": "California",
+        "city": "Oceanside",
+        "lat": 33.1958696,
+        "lon": -117.379483
+    },
+    "510": {
+        "state": "California",
+        "city": "Oakland",
+        "lat": 37.8044557,
+        "lon": -122.271356
+    },
+    "530": {
+        "state": "California",
+        "city": "Redding",
+        "lat": 40.5863563,
+        "lon": -122.391675
+    },
+    "559": {
+        "state": "California",
+        "city": "Fresno",
+        "lat": 36.7394421,
+        "lon": -119.78483
+    },
+    "562": {
+        "state": "California",
+        "city": "Long Beach",
+        "lat": 33.7690164,
+        "lon": -118.191604
+    },
+    "619": {
+        "state": "California",
+        "city": "San Diego",
+        "lat": 32.7174202,
+        "lon": -117.162772
+    },
+    "626": {
+        "state": "California",
+        "city": "Pasadena",
+        "lat": 34.1476507,
+        "lon": -118.144155
+    },
+    "628": {
+        "state": "California",
+        "city": "San Francisco",
+        "lat": 37.7879363,
+        "lon": -122.4075201
+    },
+    "650": {
+        "state": "California",
+        "city": "San Mateo",
+        "lat": 37.496904,
+        "lon": -122.3330573
+    },
+    "657": {
+        "state": "California",
+        "city": "Anaheim",
+        "lat": 33.8347516,
+        "lon": -117.911732
+    },
+    "661": {
+        "state": "California",
+        "city": "Bakersfield",
+        "lat": 35.3738712,
+        "lon": -119.019463
+    },
+    "669": {
+        "state": "California",
+        "city": "San Jose",
+        "lat": 37.3361663,
+        "lon": -121.890591
+    },
+    "707": {
+        "state": "California",
+        "city": "Santa Rosa",
+        "lat": 38.4404925,
+        "lon": -122.7141049
+    },
+    "714": {
+        "state": "California",
+        "city": "Anaheim",
+        "lat": 33.8347516,
+        "lon": -117.911732
+    },
+    "747": {
+        "state": "California",
+        "city": "San Fernando",
+        "lat": 34.28497,
+        "lon": -118.437652
+    },
+    "760": {
+        "state": "California",
+        "city": "Oceanside",
+        "lat": 33.1958696,
+        "lon": -117.379483
+    },
+    "805": {
+        "state": "California",
+        "city": "Santa Barbara",
+        "lat": 34.4221319,
+        "lon": -119.702667
+    },
+    "818": {
+        "state": "California",
+        "city": "San Fernando",
+        "lat": 34.28497,
+        "lon": -118.437652
+    },
+    "820": {
+        "state": "California",
+        "city": "Santa Barbara",
+        "lat": 34.4221319,
+        "lon": -119.702667
+    },
+    "831": {
+        "state": "California",
+        "city": "Salinas",
+        "lat": 36.6744117,
+        "lon": -121.655037
+    },
+    "840": {
+        "state": "California",
+        "city": "San Bernardino",
+        "lat": 34.8253019,
+        "lon": -116.0833144
+    },
+    "858": {
+        "state": "California",
+        "city": "San Diego",
+        "lat": 32.7174202,
+        "lon": -117.162772
+    },
+    "909": {
+        "state": "California",
+        "city": "San Bernardino",
+        "lat": 34.8253019,
+        "lon": -116.0833144
+    },
+    "916": {
+        "state": "California",
+        "city": "Sacramento",
+        "lat": 38.5810606,
+        "lon": -121.493895
+    },
+    "925": {
+        "state": "California",
+        "city": "Concord",
+        "lat": 37.9768525,
+        "lon": -122.0335624
+    },
+    "949": {
+        "state": "California",
+        "city": "Irvine",
+        "lat": 33.6856969,
+        "lon": -117.825981
+    },
+    "951": {
+        "state": "California",
+        "city": "Riverside",
+        "lat": 33.9824949,
+        "lon": -117.374238
+    },
+    "303": {
+        "state": "Colorado",
+        "city": "Denver",
+        "lat": 39.7392364,
+        "lon": -104.984862
+    },
+    "719": {
+        "state": "Colorado",
+        "city": "Colorado Springs",
+        "lat": 38.8339578,
+        "lon": -104.825348
+    },
+    "720": {
+        "state": "Colorado",
+        "city": "Denver",
+        "lat": 39.7392364,
+        "lon": -104.984862
+    },
+    "970": {
+        "state": "Colorado",
+        "city": "Fort Collins",
+        "lat": 40.5871782,
+        "lon": -105.0770113
+    },
+    "983": {
+        "state": "Colorado",
+        "city": "Denver",
+        "lat": 39.7392364,
+        "lon": -104.984862
+    },
+    "203": {
+        "state": "Connecticut",
+        "city": "Bridgeport",
+        "lat": 41.1792695,
+        "lon": -73.1887863
+    },
+    "475": {
+        "state": "Connecticut",
+        "city": "Bridgeport",
+        "lat": 41.1792695,
+        "lon": -73.1887863
+    },
+    "860": {
+        "state": "Connecticut",
+        "city": "Hartford",
+        "lat": 41.764582,
+        "lon": -72.6908547
+    },
+    "959": {
+        "state": "Connecticut",
+        "city": "Hartford",
+        "lat": 41.764582,
+        "lon": -72.6908547
+    },
+    "302": {
+        "state": "Delaware",
+        "city": "Wilmington",
+        "lat": 39.7459468,
+        "lon": -75.546589
+    },
+    "239": {
+        "state": "Florida",
+        "city": "Fort Myers",
+        "lat": 26.640628,
+        "lon": -81.8723084
+    },
+    "305": {
+        "state": "Florida",
+        "city": "Miami",
+        "lat": 25.7741566,
+        "lon": -80.1935973
+    },
+    "321": {
+        "state": "Florida",
+        "city": "Orlando",
+        "lat": 28.5421218,
+        "lon": -81.379045
+    },
+    "324": {
+        "state": "Florida",
+        "city": "Jacksonville",
+        "lat": 30.3262247,
+        "lon": -81.6579179
+    },
+    "352": {
+        "state": "Florida",
+        "city": "Gainesville",
+        "lat": 29.6519684,
+        "lon": -82.3249846
+    },
+    "386": {
+        "state": "Florida",
+        "city": "Daytona Beach",
+        "lat": 29.2108147,
+        "lon": -81.0228331
+    },
+    "407": {
+        "state": "Florida",
+        "city": "Orlando",
+        "lat": 28.5421218,
+        "lon": -81.379045
+    },
+    "448": {
+        "state": "Florida",
+        "city": "Pensacola",
+        "lat": 30.421309,
+        "lon": -87.2169149
+    },
+    "561": {
+        "state": "Florida",
+        "city": "West Palm Beach",
+        "lat": 26.715364,
+        "lon": -80.0532942
+    },
+    "645": {
+        "state": "Florida",
+        "city": "Miami",
+        "lat": 25.7741566,
+        "lon": -80.1935973
+    },
+    "656": {
+        "state": "Florida",
+        "city": "Tampa",
+        "lat": 27.9449854,
+        "lon": -82.4583107
+    },
+    "689": {
+        "state": "Florida",
+        "city": "Orlando",
+        "lat": 28.5421218,
+        "lon": -81.379045
+    },
+    "727": {
+        "state": "Florida",
+        "city": "St. Petersburg",
+        "lat": 27.7712264,
+        "lon": -82.6340259
+    },
+    "728": {
+        "state": "Florida",
+        "city": "West Palm Beach",
+        "lat": 26.715364,
+        "lon": -80.0532942
+    },
+    "754": {
+        "state": "Florida",
+        "city": "Fort Lauderdale",
+        "lat": 26.1223084,
+        "lon": -80.1433786
+    },
+    "772": {
+        "state": "Florida",
+        "city": "Port St. Lucie",
+        "lat": 27.2939333,
+        "lon": -80.3503283
+    },
+    "786": {
+        "state": "Florida",
+        "city": "Miami",
+        "lat": 25.7741566,
+        "lon": -80.1935973
+    },
+    "813": {
+        "state": "Florida",
+        "city": "Tampa",
+        "lat": 27.9449854,
+        "lon": -82.4583107
+    },
+    "850": {
+        "state": "Florida",
+        "city": "Tallahassee",
+        "lat": 30.4380832,
+        "lon": -84.2809332
+    },
+    "863": {
+        "state": "Florida",
+        "city": "Lakeland",
+        "lat": 28.0394654,
+        "lon": -81.9498042
+    },
+    "904": {
+        "state": "Florida",
+        "city": "Jacksonville",
+        "lat": 30.3262247,
+        "lon": -81.6579179
+    },
+    "941": {
+        "state": "Florida",
+        "city": "Sarasota",
+        "lat": 27.3365805,
+        "lon": -82.5308545
+    },
+    "954": {
+        "state": "Florida",
+        "city": "Fort Lauderdale",
+        "lat": 26.1223084,
+        "lon": -80.1433786
+    },
+    "229": {
+        "state": "Georgia",
+        "city": "Albany",
+        "lat": 31.5782062,
+        "lon": -84.1556809
+    },
+    "404": {
+        "state": "Georgia",
+        "city": "Atlanta",
+        "lat": 33.7544657,
+        "lon": -84.3898151
+    },
+    "470": {
+        "state": "Georgia",
+        "city": "Atlanta",
+        "lat": 33.7544657,
+        "lon": -84.3898151
+    },
+    "478": {
+        "state": "Georgia",
+        "city": "Macon",
+        "lat": 32.8406946,
+        "lon": -83.6324022
+    },
+    "678": {
+        "state": "Georgia",
+        "city": "Atlanta",
+        "lat": 33.7544657,
+        "lon": -84.3898151
+    },
+    "706": {
+        "state": "Georgia",
+        "city": "Augusta",
+        "lat": 33.4709714,
+        "lon": -81.9748429
+    },
+    "762": {
+        "state": "Georgia",
+        "city": "Augusta",
+        "lat": 33.4709714,
+        "lon": -81.9748429
+    },
+    "770": {
+        "state": "Georgia",
+        "city": "Atlanta",
+        "lat": 33.7544657,
+        "lon": -84.3898151
+    },
+    "912": {
+        "state": "Georgia",
+        "city": "Savannah",
+        "lat": 32.0790074,
+        "lon": -81.0921335
+    },
+    "943": {
+        "state": "Georgia",
+        "city": "Atlanta",
+        "lat": 33.7544657,
+        "lon": -84.3898151
+    },
+    "808": {
+        "state": "Hawaii",
+        "city": "Honolulu",
+        "lat": 21.304547,
+        "lon": -157.855676
+    },
+    "208": {
+        "state": "Idaho",
+        "city": "Boise",
+        "lat": 43.6166163,
+        "lon": -116.200886
+    },
+    "986": {
+        "state": "Idaho",
+        "city": "Boise",
+        "lat": 43.6166163,
+        "lon": -116.200886
+    },
+    "217": {
+        "state": "Illinois",
+        "city": "Springfield",
+        "lat": 39.7990175,
+        "lon": -89.6439575
+    },
+    "224": {
+        "state": "Illinois",
+        "city": "Elgin",
+        "lat": 42.03726,
+        "lon": -88.2810994
+    },
+    "309": {
+        "state": "Illinois",
+        "city": "Peoria",
+        "lat": 40.6938609,
+        "lon": -89.5891008
+    },
+    "312": {
+        "state": "Illinois",
+        "city": "Chicago",
+        "lat": 41.8755616,
+        "lon": -87.6244212
+    },
+    "331": {
+        "state": "Illinois",
+        "city": "Aurora",
+        "lat": 41.7571701,
+        "lon": -88.3147539
+    },
+    "447": {
+        "state": "Illinois",
+        "city": "Springfield",
+        "lat": 39.7990175,
+        "lon": -89.6439575
+    },
+    "464": {
+        "state": "Illinois",
+        "city": "Chicago",
+        "lat": 41.8755616,
+        "lon": -87.6244212
+    },
+    "618": {
+        "state": "Illinois",
+        "city": "Belleville",
+        "lat": 38.5135805,
+        "lon": -89.9841627
+    },
+    "630": {
+        "state": "Illinois",
+        "city": "Aurora",
+        "lat": 41.7571701,
+        "lon": -88.3147539
+    },
+    "708": {
+        "state": "Illinois",
+        "city": "Cicero",
+        "lat": 41.8455398,
+        "lon": -87.7540199
+    },
+    "730": {
+        "state": "Illinois",
+        "city": "Peoria",
+        "lat": 40.6938609,
+        "lon": -89.5891008
+    },
+    "773": {
+        "state": "Illinois",
+        "city": "Chicago",
+        "lat": 41.8755616,
+        "lon": -87.6244212
+    },
+    "779": {
+        "state": "Illinois",
+        "city": "Rockford",
+        "lat": 42.2713945,
+        "lon": -89.093966
+    },
+    "815": {
+        "state": "Illinois",
+        "city": "Rockford",
+        "lat": 42.2713945,
+        "lon": -89.093966
+    },
+    "847": {
+        "state": "Illinois",
+        "city": "Elgin",
+        "lat": 42.03726,
+        "lon": -88.2810994
+    },
+    "861": {
+        "state": "Illinois",
+        "city": "Bloomington",
+        "lat": 40.4797828,
+        "lon": -88.9939147
+    },
+    "872": {
+        "state": "Illinois",
+        "city": "Chicago",
+        "lat": 41.8755616,
+        "lon": -87.6244212
+    },
+    "219": {
+        "state": "Indiana",
+        "city": "Gary",
+        "lat": 41.6020962,
+        "lon": -87.3370646
+    },
+    "260": {
+        "state": "Indiana",
+        "city": "Fort Wayne",
+        "lat": 41.0799898,
+        "lon": -85.1386015
+    },
+    "317": {
+        "state": "Indiana",
+        "city": "Indianapolis",
+        "lat": 39.7683331,
+        "lon": -86.1583502
+    },
+    "463": {
+        "state": "Indiana",
+        "city": "Indianapolis",
+        "lat": 39.7683331,
+        "lon": -86.1583502
+    },
+    "574": {
+        "state": "Indiana",
+        "city": "South Bend",
+        "lat": 41.6833813,
+        "lon": -86.2500066
+    },
+    "765": {
+        "state": "Indiana",
+        "city": "Lafayette",
+        "lat": 40.4191229,
+        "lon": -86.8919011
+    },
+    "812": {
+        "state": "Indiana",
+        "city": "Evansville",
+        "lat": 37.970495,
+        "lon": -87.5715641
+    },
+    "930": {
+        "state": "Indiana",
+        "city": "Evansville",
+        "lat": 37.970495,
+        "lon": -87.5715641
+    },
+    "319": {
+        "state": "Iowa",
+        "city": "Cedar Rapids",
+        "lat": 41.9758872,
+        "lon": -91.6704053
+    },
+    "515": {
+        "state": "Iowa",
+        "city": "Des Moines",
+        "lat": 41.5868654,
+        "lon": -93.6249494
+    },
+    "563": {
+        "state": "Iowa",
+        "city": "Davenport",
+        "lat": 41.5235808,
+        "lon": -90.5770967
+    },
+    "641": {
+        "state": "Iowa",
+        "city": "Mason City",
+        "lat": 43.1524574,
+        "lon": -93.2017941
+    },
+    "712": {
+        "state": "Iowa",
+        "city": "Sioux City",
+        "lat": 42.4966815,
+        "lon": -96.4058782
+    },
+    "316": {
+        "state": "Kansas",
+        "city": "Wichita",
+        "lat": 37.6922361,
+        "lon": -97.3375448
+    },
+    "620": {
+        "state": "Kansas",
+        "city": "Dodge City",
+        "lat": 37.7527982,
+        "lon": -100.0170787
+    },
+    "785": {
+        "state": "Kansas",
+        "city": "Topeka",
+        "lat": 39.049011,
+        "lon": -95.677556
+    },
+    "913": {
+        "state": "Kansas",
+        "city": "Kansas City",
+        "lat": 39.1134562,
+        "lon": -94.626497
+    },
+    "270": {
+        "state": "Kentucky",
+        "city": "Bowling Green",
+        "lat": 36.9929203,
+        "lon": -86.4428677
+    },
+    "364": {
+        "state": "Kentucky",
+        "city": "Bowling Green",
+        "lat": 36.9929203,
+        "lon": -86.4428677
+    },
+    "502": {
+        "state": "Kentucky",
+        "city": "Louisville",
+        "lat": 38.2542376,
+        "lon": -85.759407
+    },
+    "606": {
+        "state": "Kentucky",
+        "city": "Ashland",
+        "lat": 38.4784144,
+        "lon": -82.6379387
+    },
+    "859": {
+        "state": "Kentucky",
+        "city": "Lexington",
+        "lat": 38.0464066,
+        "lon": -84.4970393
+    },
+    "225": {
+        "state": "Louisiana",
+        "city": "Baton Rouge",
+        "lat": 30.4494155,
+        "lon": -91.1869659
+    },
+    "318": {
+        "state": "Louisiana",
+        "city": "Shreveport",
+        "lat": 32.5135356,
+        "lon": -93.7477839
+    },
+    "337": {
+        "state": "Louisiana",
+        "city": "Lafayette",
+        "lat": 30.2262187,
+        "lon": -92.0178202
+    },
+    "504": {
+        "state": "Louisiana",
+        "city": "New Orleans",
+        "lat": 29.9561422,
+        "lon": -90.0733934
+    },
+    "985": {
+        "state": "Louisiana",
+        "city": "Houma",
+        "lat": 29.5957696,
+        "lon": -90.7195348
+    },
+    "207": {
+        "state": "Maine",
+        "city": "Portland",
+        "lat": 43.6573605,
+        "lon": -70.2586618
+    },
+    "227": {
+        "state": "Maryland",
+        "city": "Silver Spring",
+        "lat": 38.9997621,
+        "lon": -77.0240371
+    },
+    "240": {
+        "state": "Maryland",
+        "city": "Silver Spring",
+        "lat": 38.9997621,
+        "lon": -77.0240371
+    },
+    "301": {
+        "state": "Maryland",
+        "city": "Silver Spring",
+        "lat": 38.9997621,
+        "lon": -77.0240371
+    },
+    "410": {
+        "state": "Maryland",
+        "city": "Baltimore",
+        "lat": 39.2908816,
+        "lon": -76.610759
+    },
+    "443": {
+        "state": "Maryland",
+        "city": "Baltimore",
+        "lat": 39.2908816,
+        "lon": -76.610759
+    },
+    "667": {
+        "state": "Maryland",
+        "city": "Baltimore",
+        "lat": 39.2908816,
+        "lon": -76.610759
+    },
+    "339": {
+        "state": "Massachusetts",
+        "city": "Boston",
+        "lat": 42.3588336,
+        "lon": -71.0578303
+    },
+    "351": {
+        "state": "Massachusetts",
+        "city": "Lowell",
+        "lat": 42.6414437,
+        "lon": -71.3085329
+    },
+    "413": {
+        "state": "Massachusetts",
+        "city": "Springfield",
+        "lat": 42.1018764,
+        "lon": -72.5886727
+    },
+    "508": {
+        "state": "Massachusetts",
+        "city": "Worcester",
+        "lat": 42.2625621,
+        "lon": -71.8018877
+    },
+    "617": {
+        "state": "Massachusetts",
+        "city": "Boston",
+        "lat": 42.3588336,
+        "lon": -71.0578303
+    },
+    "774": {
+        "state": "Massachusetts",
+        "city": "Worcester",
+        "lat": 42.2625621,
+        "lon": -71.8018877
+    },
+    "781": {
+        "state": "Massachusetts",
+        "city": "Boston",
+        "lat": 42.3588336,
+        "lon": -71.0578303
+    },
+    "857": {
+        "state": "Massachusetts",
+        "city": "Boston",
+        "lat": 42.3588336,
+        "lon": -71.0578303
+    },
+    "978": {
+        "state": "Massachusetts",
+        "city": "Lowell",
+        "lat": 42.6414437,
+        "lon": -71.3085329
+    },
+    "231": {
+        "state": "Michigan",
+        "city": "Muskegon",
+        "lat": 43.2341813,
+        "lon": -86.2483921
+    },
+    "248": {
+        "state": "Michigan",
+        "city": "Troy",
+        "lat": 42.6055893,
+        "lon": -83.1499304
+    },
+    "269": {
+        "state": "Michigan",
+        "city": "Kalamazoo",
+        "lat": 42.291707,
+        "lon": -85.5872286
+    },
+    "313": {
+        "state": "Michigan",
+        "city": "Detroit",
+        "lat": 42.3315509,
+        "lon": -83.0466403
+    },
+    "517": {
+        "state": "Michigan",
+        "city": "Lansing",
+        "lat": 42.7338254,
+        "lon": -84.5546295
+    },
+    "586": {
+        "state": "Michigan",
+        "city": "Warren",
+        "lat": 42.4932575,
+        "lon": -83.0062746
+    },
+    "616": {
+        "state": "Michigan",
+        "city": "Grand Rapids",
+        "lat": 42.9632425,
+        "lon": -85.6678639
+    },
+    "734": {
+        "state": "Michigan",
+        "city": "Ann Arbor",
+        "lat": 42.2813722,
+        "lon": -83.7484616
+    },
+    "810": {
+        "state": "Michigan",
+        "city": "Flint",
+        "lat": 43.0161693,
+        "lon": -83.6900211
+    },
+    "906": {
+        "state": "Michigan",
+        "city": "Marquette",
+        "lat": 46.4481521,
+        "lon": -87.6305899
+    },
+    "947": {
+        "state": "Michigan",
+        "city": "Troy",
+        "lat": 42.6055893,
+        "lon": -83.1499304
+    },
+    "989": {
+        "state": "Michigan",
+        "city": "Saginaw",
+        "lat": 43.4200387,
+        "lon": -83.9490365
+    },
+    "218": {
+        "state": "Minnesota",
+        "city": "Duluth",
+        "lat": 46.7838287,
+        "lon": -92.1052679
+    },
+    "320": {
+        "state": "Minnesota",
+        "city": "St. Cloud",
+        "lat": 45.574643,
+        "lon": -94.1205808
+    },
+    "507": {
+        "state": "Minnesota",
+        "city": "Rochester",
+        "lat": 44.0234387,
+        "lon": -92.4630182
+    },
+    "612": {
+        "state": "Minnesota",
+        "city": "Minneapolis",
+        "lat": 44.9772995,
+        "lon": -93.2654692
+    },
+    "651": {
+        "state": "Minnesota",
+        "city": "St. Paul",
+        "lat": 44.9497487,
+        "lon": -93.0931028
+    },
+    "763": {
+        "state": "Minnesota",
+        "city": "Brooklyn Park",
+        "lat": 45.1004807,
+        "lon": -93.3443585
+    },
+    "952": {
+        "state": "Minnesota",
+        "city": "Bloomington",
+        "lat": 44.8322405,
+        "lon": -93.3204872
+    },
+    "228": {
+        "state": "Mississippi",
+        "city": "Gulfport",
+        "lat": 30.3674198,
+        "lon": -89.0928155
+    },
+    "601": {
+        "state": "Mississippi",
+        "city": "Jackson",
+        "lat": 32.2998686,
+        "lon": -90.1830408
+    },
+    "662": {
+        "state": "Mississippi",
+        "city": "Tupelo",
+        "lat": 34.2576067,
+        "lon": -88.7033859
+    },
+    "769": {
+        "state": "Mississippi",
+        "city": "Jackson",
+        "lat": 32.2998686,
+        "lon": -90.1830408
+    },
+    "235": {
+        "state": "Missouri",
+        "city": "Rolla",
+        "lat": 37.9509324,
+        "lon": -91.7708076
+    },
+    "314": {
+        "state": "Missouri",
+        "city": "St. Louis",
+        "lat": 38.6254063,
+        "lon": -90.190009
+    },
+    "417": {
+        "state": "Missouri",
+        "city": "Springfield",
+        "lat": 37.2081729,
+        "lon": -93.2922715
+    },
+    "557": {
+        "state": "Missouri",
+        "city": "St. Louis",
+        "lat": 38.6254063,
+        "lon": -90.190009
+    },
+    "573": {
+        "state": "Missouri",
+        "city": "Columbia",
+        "lat": 38.951883,
+        "lon": -92.3337366
+    },
+    "636": {
+        "state": "Missouri",
+        "city": "St. Charles",
+        "lat": 38.7877791,
+        "lon": -90.6747372
+    },
+    "660": {
+        "state": "Missouri",
+        "city": "Sedalia",
+        "lat": 38.7098314,
+        "lon": -93.2295515
+    },
+    "816": {
+        "state": "Missouri",
+        "city": "Kansas City",
+        "lat": 39.100105,
+        "lon": -94.5781416
+    },
+    "975": {
+        "state": "Missouri",
+        "city": "Kansas City",
+        "lat": 39.100105,
+        "lon": -94.5781416
+    },
+    "406": {
+        "state": "Montana",
+        "city": "Billings",
+        "lat": 45.7874957,
+        "lon": -108.49607
+    },
+    "308": {
+        "state": "Nebraska",
+        "city": "Grand Island",
+        "lat": 40.924271,
+        "lon": -98.338685
+    },
+    "402": {
+        "state": "Nebraska",
+        "city": "Omaha",
+        "lat": 41.2587459,
+        "lon": -95.9383758
+    },
+    "531": {
+        "state": "Nebraska",
+        "city": "Omaha",
+        "lat": 41.2587459,
+        "lon": -95.9383758
+    },
+    "702": {
+        "state": "Nevada",
+        "city": "Las Vegas",
+        "lat": 36.1674263,
+        "lon": -115.1484131
+    },
+    "725": {
+        "state": "Nevada",
+        "city": "Las Vegas",
+        "lat": 36.1674263,
+        "lon": -115.1484131
+    },
+    "775": {
+        "state": "Nevada",
+        "city": "Reno",
+        "lat": 39.5261788,
+        "lon": -119.812658
+    },
+    "603": {
+        "state": "New Hampshire",
+        "city": "Manchester",
+        "lat": 42.9956397,
+        "lon": -71.4547891
+    },
+    "201": {
+        "state": "New Jersey",
+        "city": "Jersey City",
+        "lat": 40.7215682,
+        "lon": -74.047455
+    },
+    "551": {
+        "state": "New Jersey",
+        "city": "Jersey City",
+        "lat": 40.7215682,
+        "lon": -74.047455
+    },
+    "609": {
+        "state": "New Jersey",
+        "city": "Trenton",
+        "lat": 40.2203074,
+        "lon": -74.7659
+    },
+    "640": {
+        "state": "New Jersey",
+        "city": "Trenton",
+        "lat": 40.2203074,
+        "lon": -74.7659
+    },
+    "732": {
+        "state": "New Jersey",
+        "city": "New Brunswick",
+        "lat": 40.4951365,
+        "lon": -74.4439254
+    },
+    "848": {
+        "state": "New Jersey",
+        "city": "New Brunswick",
+        "lat": 40.4951365,
+        "lon": -74.4439254
+    },
+    "856": {
+        "state": "New Jersey",
+        "city": "Camden",
+        "lat": 39.9448402,
+        "lon": -75.1198911
+    },
+    "862": {
+        "state": "New Jersey",
+        "city": "Newark",
+        "lat": 40.735657,
+        "lon": -74.1723667
+    },
+    "908": {
+        "state": "New Jersey",
+        "city": "Elizabeth",
+        "lat": 40.6639916,
+        "lon": -74.2107006
+    },
+    "973": {
+        "state": "New Jersey",
+        "city": "Newark",
+        "lat": 40.735657,
+        "lon": -74.1723667
+    },
+    "505": {
+        "state": "New Mexico",
+        "city": "Albuquerque",
+        "lat": 35.0841034,
+        "lon": -106.650985
+    },
+    "575": {
+        "state": "New Mexico",
+        "city": "Las Cruces",
+        "lat": 32.3140354,
+        "lon": -106.779807
+    },
+    "212": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "315": {
+        "state": "New York",
+        "city": "Syracuse",
+        "lat": 43.0481221,
+        "lon": -76.1474244
+    },
+    "329": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "332": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "347": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "363": {
+        "state": "New York",
+        "city": "Hempstead",
+        "lat": 40.6736812,
+        "lon": -73.6190736
+    },
+    "516": {
+        "state": "New York",
+        "city": "Hempstead",
+        "lat": 40.6736812,
+        "lon": -73.6190736
+    },
+    "518": {
+        "state": "New York",
+        "city": "Albany",
+        "lat": 42.6511674,
+        "lon": -73.754968
+    },
+    "585": {
+        "state": "New York",
+        "city": "Rochester",
+        "lat": 43.157285,
+        "lon": -77.615214
+    },
+    "607": {
+        "state": "New York",
+        "city": "Binghamton",
+        "lat": 42.098698,
+        "lon": -75.9125187
+    },
+    "624": {
+        "state": "New York",
+        "city": "Buffalo",
+        "lat": 42.8864163,
+        "lon": -78.8781493
+    },
+    "631": {
+        "state": "New York",
+        "city": "Islip",
+        "lat": 40.7300685,
+        "lon": -73.2107266
+    },
+    "646": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "680": {
+        "state": "New York",
+        "city": "Syracuse",
+        "lat": 43.0481221,
+        "lon": -76.1474244
+    },
+    "716": {
+        "state": "New York",
+        "city": "Buffalo",
+        "lat": 42.8864163,
+        "lon": -78.8781493
+    },
+    "718": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "838": {
+        "state": "New York",
+        "city": "Albany",
+        "lat": 42.6511674,
+        "lon": -73.754968
+    },
+    "845": {
+        "state": "New York",
+        "city": "Poughkeepsie",
+        "lat": 41.7065539,
+        "lon": -73.9283672
+    },
+    "914": {
+        "state": "New York",
+        "city": "Yonkers",
+        "lat": 40.9312099,
+        "lon": -73.8987469
+    },
+    "917": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "929": {
+        "state": "New York",
+        "city": "New York City",
+        "lat": 40.7127281,
+        "lon": -74.0060152
+    },
+    "934": {
+        "state": "New York",
+        "city": "Islip",
+        "lat": 40.7300685,
+        "lon": -73.2107266
+    },
+    "252": {
+        "state": "North Carolina",
+        "city": "Greenville",
+        "lat": 35.613224,
+        "lon": -77.3724593
+    },
+    "336": {
+        "state": "North Carolina",
+        "city": "Greensboro",
+        "lat": 36.0726355,
+        "lon": -79.7919754
+    },
+    "472": {
+        "state": "North Carolina",
+        "city": "Greensboro",
+        "lat": 36.0726355,
+        "lon": -79.7919754
+    },
+    "704": {
+        "state": "North Carolina",
+        "city": "Charlotte",
+        "lat": 35.2272086,
+        "lon": -80.8430827
+    },
+    "743": {
+        "state": "North Carolina",
+        "city": "Greensboro",
+        "lat": 36.0726355,
+        "lon": -79.7919754
+    },
+    "828": {
+        "state": "North Carolina",
+        "city": "Asheville",
+        "lat": 35.595363,
+        "lon": -82.5508407
+    },
+    "910": {
+        "state": "North Carolina",
+        "city": "Fayetteville",
+        "lat": 35.0525759,
+        "lon": -78.878292
+    },
+    "919": {
+        "state": "North Carolina",
+        "city": "Raleigh",
+        "lat": 35.7803977,
+        "lon": -78.6390989
+    },
+    "980": {
+        "state": "North Carolina",
+        "city": "Charlotte",
+        "lat": 35.2272086,
+        "lon": -80.8430827
+    },
+    "984": {
+        "state": "North Carolina",
+        "city": "Raleigh",
+        "lat": 35.7803977,
+        "lon": -78.6390989
+    },
+    "701": {
+        "state": "North Dakota",
+        "city": "Fargo",
+        "lat": 46.877229,
+        "lon": -96.789821
+    },
+    "216": {
+        "state": "Ohio",
+        "city": "Cleveland",
+        "lat": 41.4996574,
+        "lon": -81.6936772
+    },
+    "220": {
+        "state": "Ohio",
+        "city": "Newark",
+        "lat": 40.0581205,
+        "lon": -82.4012643
+    },
+    "234": {
+        "state": "Ohio",
+        "city": "Akron",
+        "lat": 41.083064,
+        "lon": -81.518485
+    },
+    "283": {
+        "state": "Ohio",
+        "city": "Cincinnati",
+        "lat": 39.1014537,
+        "lon": -84.5124602
+    },
+    "326": {
+        "state": "Ohio",
+        "city": "Dayton",
+        "lat": 39.7589478,
+        "lon": -84.1916069
+    },
+    "330": {
+        "state": "Ohio",
+        "city": "Akron",
+        "lat": 41.083064,
+        "lon": -81.518485
+    },
+    "380": {
+        "state": "Ohio",
+        "city": "Columbus",
+        "lat": 39.9622601,
+        "lon": -83.0007065
+    },
+    "419": {
+        "state": "Ohio",
+        "city": "Toledo",
+        "lat": 41.6529143,
+        "lon": -83.5378173
+    },
+    "436": {
+        "state": "Ohio",
+        "city": "Elyria",
+        "lat": 41.3673191,
+        "lon": -82.1073583
+    },
+    "440": {
+        "state": "Ohio",
+        "city": "Parma",
+        "lat": 41.3822398,
+        "lon": -81.7355692
+    },
+    "513": {
+        "state": "Ohio",
+        "city": "Cincinnati",
+        "lat": 39.1014537,
+        "lon": -84.5124602
+    },
+    "567": {
+        "state": "Ohio",
+        "city": "Toledo",
+        "lat": 41.6529143,
+        "lon": -83.5378173
+    },
+    "614": {
+        "state": "Ohio",
+        "city": "Columbus",
+        "lat": 39.9622601,
+        "lon": -83.0007065
+    },
+    "740": {
+        "state": "Ohio",
+        "city": "Newark",
+        "lat": 40.0581205,
+        "lon": -82.4012643
+    },
+    "937": {
+        "state": "Ohio",
+        "city": "Dayton",
+        "lat": 39.7589478,
+        "lon": -84.1916069
+    },
+    "405": {
+        "state": "Oklahoma",
+        "city": "Oklahoma City",
+        "lat": 35.4729886,
+        "lon": -97.5170536
+    },
+    "539": {
+        "state": "Oklahoma",
+        "city": "Tulsa",
+        "lat": 36.1563122,
+        "lon": -95.9927516
+    },
+    "572": {
+        "state": "Oklahoma",
+        "city": "Oklahoma City",
+        "lat": 35.4729886,
+        "lon": -97.5170536
+    },
+    "580": {
+        "state": "Oklahoma",
+        "city": "Lawton",
+        "lat": 34.6051975,
+        "lon": -98.3952279
+    },
+    "918": {
+        "state": "Oklahoma",
+        "city": "Tulsa",
+        "lat": 36.1563122,
+        "lon": -95.9927516
+    },
+    "458": {
+        "state": "Oregon",
+        "city": "Eugene",
+        "lat": 44.0505054,
+        "lon": -123.0950506
+    },
+    "503": {
+        "state": "Oregon",
+        "city": "Portland",
+        "lat": 45.5202471,
+        "lon": -122.674194
+    },
+    "541": {
+        "state": "Oregon",
+        "city": "Eugene",
+        "lat": 44.0505054,
+        "lon": -123.0950506
+    },
+    "971": {
+        "state": "Oregon",
+        "city": "Portland",
+        "lat": 45.5202471,
+        "lon": -122.674194
+    },
+    "215": {
+        "state": "Pennsylvania",
+        "city": "Philadelphia",
+        "lat": 39.9527237,
+        "lon": -75.1635262
+    },
+    "223": {
+        "state": "Pennsylvania",
+        "city": "Lancaster",
+        "lat": 40.0379958,
+        "lon": -76.3056707
+    },
+    "267": {
+        "state": "Pennsylvania",
+        "city": "Philadelphia",
+        "lat": 39.9527237,
+        "lon": -75.1635262
+    },
+    "272": {
+        "state": "Pennsylvania",
+        "city": "Scranton",
+        "lat": 41.4086874,
+        "lon": -75.6621294
+    },
+    "412": {
+        "state": "Pennsylvania",
+        "city": "Pittsburgh",
+        "lat": 40.4406968,
+        "lon": -80.0025666
+    },
+    "445": {
+        "state": "Pennsylvania",
+        "city": "Philadelphia",
+        "lat": 39.9527237,
+        "lon": -75.1635262
+    },
+    "484": {
+        "state": "Pennsylvania",
+        "city": "Allentown",
+        "lat": 40.6022552,
+        "lon": -75.4716115
+    },
+    "570": {
+        "state": "Pennsylvania",
+        "city": "Scranton",
+        "lat": 41.4086874,
+        "lon": -75.6621294
+    },
+    "582": {
+        "state": "Pennsylvania",
+        "city": "State College",
+        "lat": 40.7944504,
+        "lon": -77.8616386
+    },
+    "610": {
+        "state": "Pennsylvania",
+        "city": "Allentown",
+        "lat": 40.6022552,
+        "lon": -75.4716115
+    },
+    "717": {
+        "state": "Pennsylvania",
+        "city": "Lancaster",
+        "lat": 40.0379958,
+        "lon": -76.3056707
+    },
+    "724": {
+        "state": "Pennsylvania",
+        "city": "New Castle",
+        "lat": 40.9999202,
+        "lon": -80.3471856
+    },
+    "814": {
+        "state": "Pennsylvania",
+        "city": "Erie",
+        "lat": 42.1294712,
+        "lon": -80.0852695
+    },
+    "835": {
+        "state": "Pennsylvania",
+        "city": "Allentown",
+        "lat": 40.6022552,
+        "lon": -75.4716115
+    },
+    "878": {
+        "state": "Pennsylvania",
+        "city": "Pittsburgh",
+        "lat": 40.4406968,
+        "lon": -80.0025666
+    },
+    "401": {
+        "state": "Rhode Island",
+        "city": "Providence",
+        "lat": 41.8239891,
+        "lon": -71.4128343
+    },
+    "803": {
+        "state": "South Carolina",
+        "city": "Columbia",
+        "lat": 34.000754,
+        "lon": -81.0352313
+    },
+    "839": {
+        "state": "South Carolina",
+        "city": "Columbia",
+        "lat": 34.000754,
+        "lon": -81.0352313
+    },
+    "843": {
+        "state": "South Carolina",
+        "city": "Charleston",
+        "lat": 32.7884363,
+        "lon": -79.9399309
+    },
+    "854": {
+        "state": "South Carolina",
+        "city": "Charleston",
+        "lat": 32.7884363,
+        "lon": -79.9399309
+    },
+    "864": {
+        "state": "South Carolina",
+        "city": "Greenville",
+        "lat": 34.851354,
+        "lon": -82.3984882
+    },
+    "605": {
+        "state": "South Dakota",
+        "city": "Sioux Falls",
+        "lat": 43.5476008,
+        "lon": -96.7293629
+    },
+    "423": {
+        "state": "Tennessee",
+        "city": "Chattanooga",
+        "lat": 35.0457219,
+        "lon": -85.3094883
+    },
+    "615": {
+        "state": "Tennessee",
+        "city": "Nashville",
+        "lat": 36.1622767,
+        "lon": -86.7742984
+    },
+    "629": {
+        "state": "Tennessee",
+        "city": "Nashville",
+        "lat": 36.1622767,
+        "lon": -86.7742984
+    },
+    "731": {
+        "state": "Tennessee",
+        "city": "Jackson",
+        "lat": 35.6144446,
+        "lon": -88.8177418
+    },
+    "865": {
+        "state": "Tennessee",
+        "city": "Knoxville",
+        "lat": 35.9603948,
+        "lon": -83.9210261
+    },
+    "901": {
+        "state": "Tennessee",
+        "city": "Memphis",
+        "lat": 35.1460249,
+        "lon": -90.0517638
+    },
+    "931": {
+        "state": "Tennessee",
+        "city": "Clarksville",
+        "lat": 36.5277607,
+        "lon": -87.3588703
+    },
+    "210": {
+        "state": "Texas",
+        "city": "San Antonio",
+        "lat": 29.4246002,
+        "lon": -98.4951405
+    },
+    "214": {
+        "state": "Texas",
+        "city": "Dallas",
+        "lat": 32.7762719,
+        "lon": -96.7968559
+    },
+    "254": {
+        "state": "Texas",
+        "city": "Waco",
+        "lat": 31.5491899,
+        "lon": -97.1474628
+    },
+    "281": {
+        "state": "Texas",
+        "city": "Houston",
+        "lat": 29.7589382,
+        "lon": -95.3676974
+    },
+    "325": {
+        "state": "Texas",
+        "city": "Abilene",
+        "lat": 32.44645,
+        "lon": -99.7475905
+    },
+    "346": {
+        "state": "Texas",
+        "city": "Houston",
+        "lat": 29.7589382,
+        "lon": -95.3676974
+    },
+    "361": {
+        "state": "Texas",
+        "city": "Corpus Christi",
+        "lat": 27.7635302,
+        "lon": -97.4033191
+    },
+    "409": {
+        "state": "Texas",
+        "city": "Beaumont",
+        "lat": 30.0829344,
+        "lon": -94.0984277
+    },
+    "430": {
+        "state": "Texas",
+        "city": "Tyler",
+        "lat": 32.3512601,
+        "lon": -95.3010624
+    },
+    "432": {
+        "state": "Texas",
+        "city": "Midland",
+        "lat": 31.83688,
+        "lon": -102.0103767
+    },
+    "469": {
+        "state": "Texas",
+        "city": "Dallas",
+        "lat": 32.7762719,
+        "lon": -96.7968559
+    },
+    "512": {
+        "state": "Texas",
+        "city": "Austin",
+        "lat": 30.2711286,
+        "lon": -97.7436995
+    },
+    "682": {
+        "state": "Texas",
+        "city": "Fort Worth",
+        "lat": 32.753177,
+        "lon": -97.3327459
+    },
+    "713": {
+        "state": "Texas",
+        "city": "Houston",
+        "lat": 29.7589382,
+        "lon": -95.3676974
+    },
+    "726": {
+        "state": "Texas",
+        "city": "San Antonio",
+        "lat": 29.4246002,
+        "lon": -98.4951405
+    },
+    "737": {
+        "state": "Texas",
+        "city": "Austin",
+        "lat": 30.2711286,
+        "lon": -97.7436995
+    },
+    "806": {
+        "state": "Texas",
+        "city": "Lubbock",
+        "lat": 33.5855677,
+        "lon": -101.8470215
+    },
+    "817": {
+        "state": "Texas",
+        "city": "Fort Worth",
+        "lat": 32.753177,
+        "lon": -97.3327459
+    },
+    "830": {
+        "state": "Texas",
+        "city": "New Braunfels",
+        "lat": 29.7028266,
+        "lon": -98.1257348
+    },
+    "832": {
+        "state": "Texas",
+        "city": "Houston",
+        "lat": 29.7589382,
+        "lon": -95.3676974
+    },
+    "903": {
+        "state": "Texas",
+        "city": "Tyler",
+        "lat": 32.3512601,
+        "lon": -95.3010624
+    },
+    "915": {
+        "state": "Texas",
+        "city": "El Paso",
+        "lat": 31.7601001,
+        "lon": -106.4870476
+    },
+    "936": {
+        "state": "Texas",
+        "city": "Conroe",
+        "lat": 30.3118769,
+        "lon": -95.4560512
+    },
+    "940": {
+        "state": "Texas",
+        "city": "Denton",
+        "lat": 33.1838787,
+        "lon": -97.1413417
+    },
+    "945": {
+        "state": "Texas",
+        "city": "Dallas",
+        "lat": 32.7762719,
+        "lon": -96.7968559
+    },
+    "956": {
+        "state": "Texas",
+        "city": "Laredo",
+        "lat": 27.5079211,
+        "lon": -99.5069834
+    },
+    "972": {
+        "state": "Texas",
+        "city": "Dallas",
+        "lat": 32.7762719,
+        "lon": -96.7968559
+    },
+    "979": {
+        "state": "Texas",
+        "city": "College Station",
+        "lat": 30.6183939,
+        "lon": -96.3455991
+    },
+    "385": {
+        "state": "Utah",
+        "city": "Salt Lake City",
+        "lat": 40.7596198,
+        "lon": -111.886797
+    },
+    "435": {
+        "state": "Utah",
+        "city": "St. George",
+        "lat": 37.1098772,
+        "lon": -113.5832063
+    },
+    "801": {
+        "state": "Utah",
+        "city": "Salt Lake City",
+        "lat": 40.7596198,
+        "lon": -111.886797
+    },
+    "802": {
+        "state": "Vermont",
+        "city": "Burlington",
+        "lat": 44.4761601,
+        "lon": -73.212906
+    },
+    "276": {
+        "state": "Virginia",
+        "city": "Bristol",
+        "lat": 36.5959685,
+        "lon": -82.1885009
+    },
+    "434": {
+        "state": "Virginia",
+        "city": "Charlottesville",
+        "lat": 38.029306,
+        "lon": -78.4766781
+    },
+    "540": {
+        "state": "Virginia",
+        "city": "Roanoke",
+        "lat": 37.270973,
+        "lon": -79.9414313
+    },
+    "571": {
+        "state": "Virginia",
+        "city": "Arlington",
+        "lat": 38.8769326,
+        "lon": -77.0893094
+    },
+    "686": {
+        "state": "Virginia",
+        "city": "Richmond",
+        "lat": 37.5385087,
+        "lon": -77.43428
+    },
+    "703": {
+        "state": "Virginia",
+        "city": "Arlington",
+        "lat": 38.8769326,
+        "lon": -77.0893094
+    },
+    "757": {
+        "state": "Virginia",
+        "city": "Virginia Beach",
+        "lat": 36.8496579,
+        "lon": -75.9760751
+    },
+    "804": {
+        "state": "Virginia",
+        "city": "Richmond",
+        "lat": 37.5385087,
+        "lon": -77.43428
+    },
+    "826": {
+        "state": "Virginia",
+        "city": "Roanoke",
+        "lat": 37.270973,
+        "lon": -79.9414313
+    },
+    "948": {
+        "state": "Virginia",
+        "city": "Virginia Beach",
+        "lat": 36.8496579,
+        "lon": -75.9760751
+    },
+    "206": {
+        "state": "Washington",
+        "city": "Seattle",
+        "lat": 47.6038321,
+        "lon": -122.330062
+    },
+    "253": {
+        "state": "Washington",
+        "city": "Tacoma",
+        "lat": 47.2455013,
+        "lon": -122.438329
+    },
+    "360": {
+        "state": "Washington",
+        "city": "Olympia",
+        "lat": 47.0451022,
+        "lon": -122.8950075
+    },
+    "425": {
+        "state": "Washington",
+        "city": "Bellevue",
+        "lat": 47.6144219,
+        "lon": -122.192337
+    },
+    "509": {
+        "state": "Washington",
+        "city": "Spokane",
+        "lat": 47.6571934,
+        "lon": -117.42351
+    },
+    "564": {
+        "state": "Washington",
+        "city": "Olympia",
+        "lat": 47.0451022,
+        "lon": -122.8950075
+    },
+    "202": {
+        "state": "District of Columbia",
+        "city": "Washington",
+        "lat": 38.8950982,
+        "lon": -77.0363849
+    },
+    "771": {
+        "state": "District of Columbia",
+        "city": "Washington",
+        "lat": 38.8950982,
+        "lon": -77.0363849
+    },
+    "304": {
+        "state": "West Virginia",
+        "city": "Charleston",
+        "lat": 38.3505995,
+        "lon": -81.6332812
+    },
+    "681": {
+        "state": "West Virginia",
+        "city": "Charleston",
+        "lat": 38.3505995,
+        "lon": -81.6332812
+    },
+    "262": {
+        "state": "Wisconsin",
+        "city": "Kenosha",
+        "lat": 42.5846773,
+        "lon": -87.8212263
+    },
+    "274": {
+        "state": "Wisconsin",
+        "city": "Green Bay",
+        "lat": 44.5126379,
+        "lon": -88.0125794
+    },
+    "353": {
+        "state": "Wisconsin",
+        "city": "Madison",
+        "lat": 43.07469,
+        "lon": -89.3841663
+    },
+    "414": {
+        "state": "Wisconsin",
+        "city": "Milwaukee",
+        "lat": 43.0386475,
+        "lon": -87.9090751
+    },
+    "534": {
+        "state": "Wisconsin",
+        "city": "Eau Claire",
+        "lat": 44.811349,
+        "lon": -91.4984941
+    },
+    "608": {
+        "state": "Wisconsin",
+        "city": "Madison",
+        "lat": 43.07469,
+        "lon": -89.3841663
+    },
+    "715": {
+        "state": "Wisconsin",
+        "city": "Eau Claire",
+        "lat": 44.811349,
+        "lon": -91.4984941
+    },
+    "920": {
+        "state": "Wisconsin",
+        "city": "Green Bay",
+        "lat": 44.5126379,
+        "lon": -88.0125794
+    },
+    "307": {
+        "state": "Wyoming",
+        "city": "Cheyenne",
+        "lat": 41.139981,
+        "lon": -104.820246
+    },
+    "684": {
+        "state": "American Samoa",
+        "city": "Pago Pago",
+        "lat": -14.2754786,
+        "lon": -170.7048298
+    },
+    "671": {
+        "state": "Guam",
+        "city": "Hagåtña",
+        "lat": 13.4748148,
+        "lon": 144.7516191
+    },
+    "670": {
+        "state": "Northern Mariana Islands",
+        "city": "Saipan",
+        "lat": 15.1909825,
+        "lon": 145.746743
+    },
+    "787": {
+        "state": "Puerto Rico",
+        "city": "San Juan",
+        "lat": 18.465299,
+        "lon": -66.116666
+    },
+    "939": {
+        "state": "Puerto Rico",
+        "city": "San Juan",
+        "lat": 18.465299,
+        "lon": -66.116666
+    },
+    "340": {
+        "state": "U.S. Virgin Islands",
+        "city": "Charlotte Amalie",
+        "lat": 18.3414575,
+        "lon": -64.9335173
+    }
+}
