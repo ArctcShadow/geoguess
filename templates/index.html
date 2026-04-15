@@ -3,85 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пошук Area Code США</title>
+    <title>GeoGuessr Meta Tracker</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 0 auto; padding: 30px; text-align: center; background-color: #f4f4f9;}
-        h1 { color: #333; }
-        #map { height: 500px; width: 100%; margin-top: 20px; border-radius: 12px; border: 2px solid #ddd; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .controls { margin: 25px 0; display: flex; justify-content: center; gap: 10px; }
-        input { padding: 12px; font-size: 16px; width: 250px; border: 1px solid #ccc; border-radius: 6px; }
-        button { padding: 12px 24px; font-size: 16px; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 6px; transition: background 0.3s; }
-        button:hover { background-color: #0056b3; }
-        #result { margin-top: 15px; font-size: 20px; font-weight: 500; min-height: 30px; color: #2c3e50; }
-        .error { color: #e74c3c; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; text-align: center; background-color: #1e1e2e; color: #cdd6f4;}
+        h1 { color: #89b4fa; }
+        #map { height: 500px; width: 100%; margin-top: 20px; border-radius: 12px; border: 2px solid #45475a; }
+        .tabs { margin-bottom: 20px; }
+        .tab-btn { padding: 10px 20px; background: #313244; color: #cdd6f4; border: none; border-radius: 6px; cursor: pointer; margin: 0 5px; font-weight: bold;}
+        .tab-btn.active { background: #89b4fa; color: #1e1e2e; }
+        .controls { margin: 20px 0; display: flex; justify-content: center; gap: 10px; }
+        input { padding: 12px; font-size: 16px; width: 300px; border: none; border-radius: 6px; background: #313244; color: #cdd6f4; outline: none;}
+        button { padding: 12px 24px; font-size: 16px; cursor: pointer; background-color: #a6e3a1; color: #1e1e2e; border: none; border-radius: 6px; font-weight: bold;}
+        #result { margin-top: 15px; font-size: 18px; min-height: 30px; color: #f38ba8; }
+        .success-text { color: #a6e3a1; }
     </style>
 </head>
 <body>
 
-    <h1>Де знаходиться цей телефонний код?</h1>
+    <h1>GeoGuessr Meta Tracker</h1>
+    
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchMode('usa')" id="btn-usa">Коди США</button>
+        <button class="tab-btn" onclick="switchMode('indo')" id="btn-indo">Індонезія (Kabupaten)</button>
+    </div>
     
     <div class="controls">
-        <input type="text" id="areaCode" placeholder="Код (напр. 310, 212, 404)" maxlength="3">
-        <button onclick="findArea()">Пошук</button>
+        <input type="text" id="searchInput" placeholder="Код (напр. 310)" autocomplete="off">
+        <button onclick="performSearch()">Пошук</button>
     </div>
 
-    <div id="result">Очікування вводу...</div>
+    <div id="result">Оберіть режим та введіть дані...</div>
     <div id="map"></div>
 
     <script>
+        let currentMode = 'usa';
         const map = L.map('map').setView([39.8283, -98.5795], 4);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18 }).addTo(map);
         let marker = null;
 
-        async function findArea() {
-            const codeInput = document.getElementById('areaCode').value.trim();
+        function switchMode(mode) {
+            currentMode = mode;
+            document.getElementById('btn-usa').classList.remove('active');
+            document.getElementById('btn-indo').classList.remove('active');
+            document.getElementById(`btn-${mode}`).classList.add('active');
+            
+            const input = document.getElementById('searchInput');
+            if (mode === 'usa') {
+                input.placeholder = "Код (напр. 310, 212)";
+                map.flyTo([39.8283, -98.5795], 4, {duration: 1});
+            } else {
+                input.placeholder = "Назва (напр. Malang, Bogor)";
+                map.flyTo([-0.7893, 113.9213], 5, {duration: 1}); // Центр Індонезії
+            }
+            document.getElementById('result').innerHTML = '';
+            input.value = '';
+            input.focus();
+        }
+
+        async function performSearch() {
+            const query = document.getElementById('searchInput').value.trim();
             const resultDiv = document.getElementById('result');
             
-            if (!codeInput) {
-                resultDiv.innerHTML = '<span class="error">Будь ласка, введіть код.</span>';
-                return;
-            }
+            if (!query) return;
 
             try {
-                const response = await fetch(`/api/lookup?code=${codeInput}`);
+                let url = currentMode === 'usa' ? `/api/lookup?code=${query}` : `/api/indo?q=${query}`;
+                const response = await fetch(url);
                 const data = await response.json();
 
                 if (data.success) {
                     const info = data.data;
                     
-                    resultDiv.innerHTML = `Штат: <b>${info.state}</b> | Найбільше місто: <b>${info.city}</b>`;
-                    
                     if (marker) map.removeLayer(marker);
                     
-                    
-                    marker = L.marker([info.lat, info.lon]).addTo(map)
-                        .bindPopup(`<b>${info.city}</b><br>${info.state}<br>Код: ${codeInput}`)
-                        .openPopup();
-                        
-                
-                    map.flyTo([info.lat, info.lon], 8, {
-                        animate: true,
-                        duration: 1.5
-                    });
-                    
+                    if (currentMode === 'usa') {
+                        resultDiv.innerHTML = `<span class="success-text">Штат: ${info.state} | Місто: ${info.city}</span>`;
+                        marker = L.marker([info.lat, info.lon]).addTo(map)
+                            .bindPopup(`<b>${info.city}</b><br>${info.state}`).openPopup();
+                        map.flyTo([info.lat, info.lon], 8);
+                    } else {
+                        resultDiv.innerHTML = `<span class="success-text">Округ: ${info.name} | Острів: ${info.island}</span>`;
+                        marker = L.marker([info.lat, info.lon]).addTo(map)
+                            .bindPopup(`<b>${info.name}</b><br>Острів: ${info.island}`).openPopup();
+                        map.flyTo([info.lat, info.lon], 9);
+                    }
                 } else {
-                    resultDiv.innerHTML = `<span class="error">${data.error}</span>`;
+                    resultDiv.innerHTML = data.error;
                 }
             } catch (error) {
-                resultDiv.innerHTML = '<span class="error">Помилка з\'єднання з сервером.</span>';
+                resultDiv.innerHTML = 'Помилка сервера.';
             }
         }
         
-        document.getElementById('areaCode').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') findArea();
+        document.getElementById('searchInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') performSearch();
         });
     </script>
 

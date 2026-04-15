@@ -10,7 +10,9 @@ JSON_PATH = os.path.join(BASE_DIR, 'area_codes.json')
 
 with open(JSON_PATH, 'r', encoding='utf-8') as f:
     AREA_CODES_DB = json.load(f)
-
+    
+with open(os.path.join(BASE_DIR, 'kabupaten.json'), 'r', encoding='utf-8') as f:
+    KABUPATEN_DB = json.load(f)
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -30,6 +32,33 @@ def lookup():
         return jsonify({"success": True, "data": data})
     else:
         return jsonify({"success": False, "error": f"Код {clean_code} не знайдено в базі."}), 404
+
+
+
+@app.route('/api/indo', methods=['GET'])
+def indo_lookup():
+    query = request.args.get('q', '').lower().strip()
+    
+    if len(query) < 3:
+        return jsonify({"success": False, "error": "Введіть хоча б 3 літери."}), 400
+
+    results = []
+    for name, data in KABUPATEN_DB.items():
+        if query in name.lower():
+            results.append({
+                "name": name,
+                "island": data["island"],
+                "lat": data["lat"],
+                "lon": data["lon"]
+            })
+            
+    if results:
+        return jsonify({"success": True, "data": results[0]})
+    else:
+        return jsonify({"success": False, "error": "Кабупатен не знайдено."}), 404
+
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
