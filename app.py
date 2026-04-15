@@ -1,5 +1,6 @@
 import json
 import os
+import random
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
@@ -58,7 +59,16 @@ def indo_lookup():
         return jsonify({"success": False, "error": "Кабупатен не знайдено."}), 404
 
 
-
+@app.route('/api/indo/random', methods=['GET'])
+def indo_random():
+    random_name = random.choice(list(KABUPATEN_DB.keys()))
+    data = KABUPATEN_DB[random_name]
+    
+    return jsonify({
+        "success": True, 
+        "name": random_name, 
+        "data": data
+    })
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoGuessr Meta Tracker</title>
+    <title>GeoGuessr Meta Tracker & Trainer</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
     <style>
+        /* Темна тема Catppuccin */
         body { font-family: 'Segoe UI', Tahoma, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; text-align: center; background-color: #1e1e2e; color: #cdd6f4;}
         h1 { color: #89b4fa; }
-        #map { height: 500px; width: 100%; margin-top: 20px; border-radius: 12px; border: 2px solid #45475a; }
+        #map { height: 500px; width: 100%; margin-top: 20px; border-radius: 12px; border: 2px solid #45475a; cursor: crosshair; }
+        
+        /* Вкладки */
         .tabs { margin-bottom: 20px; }
         .tab-btn { padding: 10px 20px; background: #313244; color: #cdd6f4; border: none; border-radius: 6px; cursor: pointer; margin: 0 5px; font-weight: bold;}
         .tab-btn.active { background: #89b4fa; color: #1e1e2e; }
-        .controls { margin: 20px 0; display: flex; justify-content: center; gap: 10px; }
+        
+        /* Панель звичайного пошуку */
+        .search-controls { margin: 20px 0; display: flex; justify-content: center; gap: 10px; }
         input { padding: 12px; font-size: 16px; width: 300px; border: none; border-radius: 6px; background: #313244; color: #cdd6f4; outline: none;}
-        button { padding: 12px 24px; font-size: 16px; cursor: pointer; background-color: #a6e3a1; color: #1e1e2e; border: none; border-radius: 6px; font-weight: bold;}
+        
+        /* Спільні стилі кнопок */
+        button.action-btn { padding: 12px 24px; font-size: 16px; cursor: pointer; border: none; border-radius: 6px; font-weight: bold; }
+        .btn-search { background-color: #a6e3a1; color: #1e1e2e; }
+        .btn-next { background-color: #cba6f7; color: #1e1e2e; }
+        .btn-check { background-color: #f38ba8; color: #1e1e2e; }
+
+        /* Панель навчання */
+        .train-controls { margin: 20px 0; display: none; flex-direction: column; align-items: center; gap: 15px; }
+        #target-name { font-size: 24px; color: #f9e2af; font-weight: bold; margin: 0; }
+        #hint-text { color: #fab387; font-size: 16px; margin: 5px 0; display: none; }
+        
+        /* Результати */
         #result { margin-top: 15px; font-size: 18px; min-height: 30px; color: #f38ba8; }
         .success-text { color: #a6e3a1; }
+        .distance-text { color: #fab387; font-size: 22px; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -27,47 +45,223 @@
     <h1>GeoGuessr Meta Tracker</h1>
     
     <div class="tabs">
-        <button class="tab-btn active" onclick="switchMode('usa')" id="btn-usa">Коди США/Канада</button>
-        <button class="tab-btn" onclick="switchMode('indo')" id="btn-indo">Індонезія (Kabupaten)</button>
+        <button class="tab-btn active" onclick="switchMode('usa')" id="btn-usa">Коди Північної Америки</button>
+        <button class="tab-btn" onclick="switchMode('indo')" id="btn-indo">Пошук Кабупатенів</button>
+        <button class="tab-btn" onclick="switchMode('train')" id="btn-train">🎮 Режим навчання</button>
     </div>
     
-    <div class="controls">
-        <input type="text" id="searchInput" placeholder="Код (напр. 310)" autocomplete="off">
-        <button onclick="performSearch()">Пошук</button>
+    <div class="search-controls" id="search-panel">
+        <input type="text" id="searchInput" placeholder="Код (напр. 310, 807)" autocomplete="off">
+        <button class="action-btn btn-search" onclick="performSearch()">Знайти</button>
+    </div>
+
+    <div class="train-controls" id="train-panel">
+        <p id="target-name">Натисніть "Почати", щоб отримати локацію</p>
+        <p id="hint-text"></p>
+        
+        <div>
+            <button class="action-btn" id="btnHint" style="background-color: #f9e2af; color: #1e1e2e; display: none;" onclick="showHint()">Підказка</button>
+            <button class="action-btn btn-check" id="btnCheckGuess" style="display: none;" onclick="checkGuess()">Перевірити здогадку</button>
+            <button class="action-btn btn-next" id="btnNextRound" onclick="startRound()">Почати</button>
+        </div>
     </div>
 
     <div id="result">Оберіть режим та введіть дані...</div>
     <div id="map"></div>
 
     <script>
+        // Ініціалізація карти
         let currentMode = 'usa';
         const map = L.map('map').setView([39.8283, -98.5795], 4);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18 }).addTo(map);
-        let marker = null;
+        
+        // Змінні карти
+        let searchMarker = null;
+        let guessMarker = null;
+        let actualMarker = null;
+        let resultLine = null;
 
+        // Змінні ігрового режиму
+        let currentTargetData = null;
+        let isWaitingForGuess = false;
+        let mistakes = []; 
+        let hintUsed = false;
+
+        // Перемикання вкладок
         function switchMode(mode) {
             currentMode = mode;
-            document.getElementById('btn-usa').classList.remove('active');
-            document.getElementById('btn-indo').classList.remove('active');
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(`btn-${mode}`).classList.add('active');
             
+            const searchPanel = document.getElementById('search-panel');
+            const trainPanel = document.getElementById('train-panel');
             const input = document.getElementById('searchInput');
-            if (mode === 'usa') {
-                input.placeholder = "Код (напр. 310, 212)";
-                map.flyTo([39.8283, -98.5795], 4, {duration: 1});
-            } else {
-                input.placeholder = "Назва (напр. Malang, Bogor)";
-                map.flyTo([-0.7893, 113.9213], 5, {duration: 1}); // Центр Індонезії
-            }
-            document.getElementById('result').innerHTML = '';
-            input.value = '';
-            input.focus();
-        }
-
-        async function performSearch() {
-            const query = document.getElementById('searchInput').value.trim();
             const resultDiv = document.getElementById('result');
             
+            clearMap();
+            resultDiv.innerHTML = '';
+
+            if (mode === 'train') {
+                searchPanel.style.display = 'none';
+                trainPanel.style.display = 'flex';
+                map.setView([-0.7893, 113.9213], 5); // Центр Індонезії
+                document.getElementById('target-name').innerText = 'Натисніть "Почати"';
+                document.getElementById('btnNextRound').innerText = 'Почати';
+                document.getElementById('btnCheckGuess').style.display = 'none';
+                document.getElementById('btnHint').style.display = 'none';
+                document.getElementById('hint-text').style.display = 'none';
+            } else {
+                searchPanel.style.display = 'flex';
+                trainPanel.style.display = 'none';
+                isWaitingForGuess = false;
+                
+                if (mode === 'usa') {
+                    input.placeholder = "Код (напр. 310, 807)";
+                    map.setView([39.8283, -98.5795], 4);
+                } else {
+                    input.placeholder = "Назва (напр. Malang, Bogor)";
+                    map.setView([-0.7893, 113.9213], 5);
+                }
+                input.value = '';
+                input.focus();
+            }
+        }
+
+        // Видалення всіх об'єктів з карти
+        function clearMap() {
+            if (searchMarker) map.removeLayer(searchMarker);
+            if (guessMarker) map.removeLayer(guessMarker);
+            if (actualMarker) map.removeLayer(actualMarker);
+            if (resultLine) map.removeLayer(resultLine);
+        }
+
+        // Обробка кліку по карті в режимі гри
+        map.on('click', function(e) {
+            if (currentMode !== 'train' || !isWaitingForGuess) return;
+
+            if (guessMarker) map.removeLayer(guessMarker);
+            
+            guessMarker = L.circleMarker(e.latlng, {
+                radius: 8,
+                fillColor: "#89b4fa",
+                color: "#1e1e2e",
+                weight: 2,
+                fillOpacity: 1
+            }).addTo(map);
+
+            document.getElementById('btnCheckGuess').style.display = 'inline-block';
+            document.getElementById('btnNextRound').style.display = 'none';
+        });
+
+        // Виклик підказки
+        function showHint() {
+            if (!currentTargetData) return;
+            const hintEl = document.getElementById('hint-text');
+            hintEl.innerText = `Підказка: шукай у провінції ${currentTargetData.island}`;
+            hintEl.style.display = 'block';
+            document.getElementById('btnHint').style.display = 'none';
+            hintUsed = true;
+        }
+
+        // Початок нового раунду
+        async function startRound() {
+            clearMap();
+            map.flyTo([-0.7893, 113.9213], 5, {duration: 1.5});
+            
+            document.getElementById('result').innerHTML = '';
+            document.getElementById('btnCheckGuess').style.display = 'none';
+            
+            // Скидаємо підказку
+            document.getElementById('hint-text').style.display = 'none';
+            document.getElementById('btnHint').style.display = 'none';
+            hintUsed = false;
+
+            const targetEl = document.getElementById('target-name');
+            targetEl.innerText = "Завантаження...";
+
+            // Інтервальне повторення: 30% шанс на помилку
+            const useMistake = Math.random() < 0.3 && mistakes.length > 0;
+
+            if (useMistake) {
+                const randomIndex = Math.floor(Math.random() * mistakes.length);
+                currentTargetData = mistakes[randomIndex];
+                
+                targetEl.innerHTML = `Знайди (Повторення): <span style="color: #f9e2af;">${currentTargetData.name}</span>`;
+                isWaitingForGuess = true;
+                document.getElementById('btnHint').style.display = 'inline-block';
+            } else {
+                try {
+                    const response = await fetch('/api/indo/random');
+                    const data = await response.json();
+
+                    if (data.success) {
+                        currentTargetData = {
+                            name: data.name,
+                            lat: data.data.lat,
+                            lon: data.data.lon,
+                            island: data.data.island
+                        };
+                        targetEl.innerHTML = `Знайди: <span style="color: #a6e3a1;">${data.name}</span>`;
+                        isWaitingForGuess = true;
+                        document.getElementById('btnHint').style.display = 'inline-block';
+                    }
+                } catch (error) {
+                    targetEl.innerText = "Помилка сервера. Спробуй ще раз.";
+                }
+            }
+        }
+
+        // Перевірка здогадки та запис у помилки
+        function checkGuess() {
+            if (!guessMarker || !currentTargetData) return;
+            isWaitingForGuess = false;
+
+            const actualLatLng = L.latLng(currentTargetData.lat, currentTargetData.lon);
+            const guessLatLng = guessMarker.getLatLng();
+
+            actualMarker = L.marker(actualLatLng).addTo(map)
+                .bindPopup(`<b>${currentTargetData.name}</b><br>Провінція: ${currentTargetData.island}`).openPopup();
+
+            resultLine = L.polyline([guessLatLng, actualLatLng], {
+                color: '#f38ba8', dashArray: '10, 10', weight: 3
+            }).addTo(map);
+
+            const distanceMeters = map.distance(guessLatLng, actualLatLng);
+            const distanceKm = (distanceMeters / 1000).toFixed(1);
+
+            let message = `<span class="distance-text">Відхилення: ${distanceKm} км</span>`;
+
+            // Логіка помилок (>250км або використана підказка)
+            const isMistake = distanceKm > 250;
+            const existingIndex = mistakes.findIndex(item => item.name === currentTargetData.name);
+
+            if (isMistake) {
+                if (existingIndex === -1) mistakes.push(currentTargetData);
+                message += `<br><span style="color: #f38ba8; font-size: 14px;">Локацію запам'ятовано для повторення</span>`;
+            } else {
+                if (existingIndex !== -1) {
+                    mistakes.splice(existingIndex, 1);
+                    message += `<br><span style="color: #a6e3a1; font-size: 14px;">Ідеально! Видалено зі списку помилок</span>`;
+                }
+            }
+
+            document.getElementById('result').innerHTML = message;
+            map.fitBounds(resultLine.getBounds(), { padding: [50, 50] });
+
+            document.getElementById('btnCheckGuess').style.display = 'none';
+            document.getElementById('btnHint').style.display = 'none';
+            
+            const btnNext = document.getElementById('btnNextRound');
+            btnNext.innerText = 'Наступний раунд';
+            btnNext.style.display = 'inline-block';
+        }
+
+        // Звичайний пошук
+        async function performSearch() {
+            if (currentMode === 'train') return;
+            
+            const query = document.getElementById('searchInput').value.trim();
+            const resultDiv = document.getElementById('result');
             if (!query) return;
 
             try {
@@ -77,18 +271,17 @@
 
                 if (data.success) {
                     const info = data.data;
-                    
-                    if (marker) map.removeLayer(marker);
+                    clearMap();
                     
                     if (currentMode === 'usa') {
                         resultDiv.innerHTML = `<span class="success-text">Штат: ${info.state} | Місто: ${info.city}</span>`;
-                        marker = L.marker([info.lat, info.lon]).addTo(map)
+                        searchMarker = L.marker([info.lat, info.lon]).addTo(map)
                             .bindPopup(`<b>${info.city}</b><br>${info.state}`).openPopup();
                         map.flyTo([info.lat, info.lon], 8);
                     } else {
-                        resultDiv.innerHTML = `<span class="success-text">Округ: ${info.name} | Острів: ${info.island}</span>`;
-                        marker = L.marker([info.lat, info.lon]).addTo(map)
-                            .bindPopup(`<b>${info.name}</b><br>Острів: ${info.island}`).openPopup();
+                        resultDiv.innerHTML = `<span class="success-text">Округ: ${info.name} | Провінція: ${info.island}</span>`;
+                        searchMarker = L.marker([info.lat, info.lon]).addTo(map)
+                            .bindPopup(`<b>${info.name}</b><br>Провінція: ${info.island}`).openPopup();
                         map.flyTo([info.lat, info.lon], 9);
                     }
                 } else {
@@ -99,6 +292,7 @@
             }
         }
         
+        // Пошук по Enter
         document.getElementById('searchInput').addEventListener('keypress', function (e) {
             if (e.key === 'Enter') performSearch();
         });
